@@ -3,7 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/toast/sonner";
-import { ThemeProvider } from "@/components/provider/theme-provider";
+import Layout from "@/components/view/layout";
 
 const groteskSans = Space_Grotesk({
   variable: "--font-grotesk",
@@ -23,14 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("antialiased", groteskSans.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <Layout>{children}</Layout>
         <Toaster />
       </body>
     </html>

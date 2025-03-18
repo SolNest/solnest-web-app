@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-empty-object-type */
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { Row } from "../view/layout";
+import { Row } from "../common";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
