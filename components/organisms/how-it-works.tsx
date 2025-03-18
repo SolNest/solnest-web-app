@@ -42,7 +42,7 @@ const HowItWorks = () => {
       <div className="absolute w-[498px] h-[498px] top-[375px] right-[120px] rounded-[249px] [background:linear-gradient(90deg,rgba(93,63,211,0.2)_0%,rgba(0,255,163,0.2)_100%)] blur-[100px] z-0" />
       <AnimatedList
         staggerDelay={0.2}
-        className="grid md:grid-cols-3 max-w-2xl mx-auto gap-4"
+        className="grid md:grid-cols-3 mx-auto gap-4"
       >
         {workSteps.map((item, index) => (
           <div
