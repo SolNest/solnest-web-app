@@ -30,10 +30,10 @@ const workSteps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-24 relative px-1">
+    <section id="how-it-works" className="py-24 relative mx-auto px-1">
       <AnimatedElement>
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="inline-block px-6 py-2 rounded-full bg-[#111530] text-white text-lg font-medium">
+          <h2 className="inline-block px-6 py-2 rounded-full bg-[#111530] text-secondary text-lg font-medium">
             How It Works
           </h2>
         </div>
@@ -42,7 +42,7 @@ const HowItWorks = () => {
       <div className="absolute w-[498px] h-[498px] top-[375px] right-[120px] rounded-[249px] [background:linear-gradient(90deg,rgba(93,63,211,0.2)_0%,rgba(0,255,163,0.2)_100%)] blur-[100px] z-0" />
       <AnimatedList
         staggerDelay={0.2}
-        className="grid md:grid-cols-3 mx-auto gap-4"
+        className="grid md:grid-cols-3 mx-auto max-w-5xl gap-4"
       >
         {workSteps.map((item, index) => (
           <div
@@ -50,7 +50,9 @@ const HowItWorks = () => {
             key={index}
           >
             {/* gradient effect */}
-            <H className="text-xl font-semibold mb-2">{item.title}</H>
+            <H className="text-xl font-semibold mb-2 text-primary dark:text-secondary">
+              {item.title}
+            </H>
             <P className="text-muted text-sm mb-6">{item.description}</P>
             <div className="flex w-full justify-center">{item.image}</div>
           </div>

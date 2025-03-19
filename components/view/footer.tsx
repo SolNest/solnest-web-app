@@ -6,7 +6,7 @@ import { Picture } from "../common/picture";
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden">
-      <div className="grid md:grid-cols-4 gap-8 px-2 border-b border-gray-800 py-8">
+      <div className="grid md:grid-cols-4 gap-8 px-2 border-b border-gray-800 py-8 max-w-7xl mx-auto">
         <div className="md:col-span-1 flex flex-col items-start">
           <Link href="/" className="flex items-start justify-start gap-2 mb-4">
             <Picture
@@ -16,13 +16,13 @@ const Footer = () => {
           </Link>
           <p className="text-sm text-muted mb-4">
             Where Your Savings Grow Smarter and Faster - Seamlessly Bridging
-            Fiat and Crypto on Solana
+            Fiat and Crypto on Solanaf
           </p>
           <div className="flex items-center gap-2 mb-6">
             <PoweredSolanaSVGComponent />
           </div>
           <p className="text-xs text-muted">
-            Copyright © 2023 SolNest. All rights reserved.
+            Copyright © 2025 SolNest. All rights reserved.
           </p>
         </div>
 
@@ -94,13 +94,13 @@ const Footer = () => {
           </p>
           <Link
             href="#"
-            className="inline-block px-4 py-2 [background:linear-gradient(180deg,rgba(93,63,211,1)_0%,rgba(10,31,68,1)_76%)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+            className="inline-block px-4 py-2 [background:linear-gradient(180deg,rgba(93,63,211,1)_0%,rgba(10,31,68,1)_76%)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity text-secondary"
           >
             Get in Touch With Us
           </Link>
         </div>
       </div>
-      <div className="flex w-full pt-5">
+      <div className="flex w-full max-w-7xl mx-auto pt-5">
         <TransparentSolNest />
       </div>
       <div className="w-full h-[194px] absolute bottom-0 rounded-[708.5px/97px] [background:linear-gradient(90deg,rgba(93,63,211,0.3)_0%,rgba(0,255,163,0.3)_100%)] blur-[100px]" />

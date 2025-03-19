@@ -8,7 +8,7 @@ const WhySolNest = () => {
     <section id="why-solnest" className="py-24 relative mx-auto px-2">
       <AnimatedElement>
         <div className="text-center mb-12 md:mb-16">
-          <H className="inline-block px-6 py-2 rounded-full bg-[#111530] text-lg font-medium">
+          <H className="inline-block px-6 py-2 rounded-full bg-[#111530] text-lg font-medium text-secondary">
             Why SolNest
           </H>
         </div>

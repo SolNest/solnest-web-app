@@ -28,7 +28,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="top-5 pt-2 sticky max-w-4xl w-full mx-auto z-20">
+    <nav className="top-5 pt-2 sticky max-w-4xl w-full px-1 mx-auto z-20">
       <div className="flex bg-[#111530]/80 items-center justify-between backdrop-blur-md rounded-full px-6 py-1">
         <Link href="/">
           <Picture

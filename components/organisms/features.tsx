@@ -54,7 +54,7 @@ const Features = () => {
             style={{ height: "223px" }}
           >
             <div className="flex">{item.image}</div>
-            <H className="text-md leading-tight font-semibold mb-2">
+            <H className="text-md leading-tight text-secondary font-semibold mb-2">
               {item.description}
             </H>
           </div>

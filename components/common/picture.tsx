@@ -7,23 +7,26 @@ import { HTMLAttributes, FC } from "react";
 export interface PictureProps {
   container: HTMLAttributes<HTMLDivElement>;
   image: ImageProps;
+  invertInLightkMode?: boolean;
 }
-export const Picture: FC<PictureProps> = ({ container, image }) => (
-  <div
-    {...container}
-    className={cn(
-      "relative w-[50px] h-[50px] flex justify-center items-center",
-      container.className
-    )}
-  >
-    {}
-    <Image
-      {...image}
-      fill
+export const Picture: FC<PictureProps> = ({ container, image }) => {
+  return (
+    <div
+      {...container}
       className={cn(
-        "w-[100%] h-[100%] object-contain object-center",
-        image.className
+        "relative w-[50px] h-[50px] flex justify-center items-center",
+        container.className
       )}
-    />
-  </div>
-);
+    >
+      {}
+      <Image
+        {...image}
+        fill
+        className={cn(
+          "w-[100%] h-[100%] object-contain object-center",
+          image.className
+        )}
+      />
+    </div>
+  );
+};

@@ -11,7 +11,7 @@ const JoinWaitlist = () => {
           className="bg-gradient-to-r from-purple-900/50 to-blue-900/50 rounded-2xl p-8 md:p-12"
           style={{ background: "bg-gradient-primary" }}
         >
-          <div className="flex flex-col md:flex-row md:justify-between gap-5 items-center mx-auto">
+          <div className="flex flex-col md:flex-row md:justify-between gap-5 items-center mx-auto max-w-7xl">
             <div className="max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Be Among the First to Experience Smart Savings
