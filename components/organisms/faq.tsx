@@ -117,7 +117,7 @@ export function FAQ() {
                   value={`item-${index}`}
                   className="bg-[#0f1a2a] rounded-xl overflow-hidden border-none"
                 >
-                  <AccordionTrigger className="px-6 py-5 text-left hover:no-underline text-primary cursor-pointer">
+                  <AccordionTrigger className="px-6 py-5 text-left hover:no-underline text-primary dark:text-secondary cursor-pointer">
                     <span>{item.question}</span>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-secondary dark:text-muted">
