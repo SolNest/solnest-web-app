@@ -41,7 +41,7 @@ const Navbar = () => {
             image={{ src: "/images/solnest.png", alt: "SolNest Logo" }}
           />
         </Link>
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-6">
           {navItems.map((item) => (
             <Link
               className="text-sm text-secondary hover:text-primary active:text-primary"
