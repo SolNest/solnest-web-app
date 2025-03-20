@@ -22,21 +22,21 @@ export const metadata: Metadata = {
   applicationName: "SolNest",
   title: "SolNest",
   description: "The Future of Savings, Today",
-  icons: {
-    icon: [{ sizes: "", url: "" }],
-  },
+  // icons: {
+  //   icon: [{ sizes: "", url: "" }],
+  // },
   referrer: "origin-when-cross-origin",
   openGraph: {
     title: "SolNest",
     description: "The Future of Savings, Today",
-    images: [{ url: "", alt: "" }],
+    // images: [{ url: "", alt: "" }],
     type: "website",
-    url: "",
+    // url: "",
     siteName: "SolNest",
   },
-  alternates: {
-    canonical: "",
-  },
+  // alternates: {
+  //   canonical: "",
+  // },
 };
 
 export default function RootLayout({
