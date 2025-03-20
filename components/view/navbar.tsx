@@ -3,6 +3,9 @@ import React from "react";
 import { Picture } from "../common/picture";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
+import { Row } from "../common";
+import { ThemeToggle } from "../animations/theme-toggle";
 
 const Navbar = () => {
   const navItems = [
@@ -27,6 +30,8 @@ const Navbar = () => {
       route: "#faq",
     },
   ];
+
+  const router = useRouter();
   return (
     <nav className="top-5 pt-2 sticky max-w-4xl w-full px-1 mx-auto z-20">
       <div className="flex bg-[#111530]/80 items-center justify-between backdrop-blur-md rounded-full px-6 py-1">
@@ -47,12 +52,16 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button
-          className="rounded-full px-6 dark:text-secondary"
-          style={{ background: "bg-primary-gradient" }}
-        >
-          Join Waitlist
-        </Button>
+        <Row className="gap-2 items-center">
+          <ThemeToggle />
+          <Button
+            className="rounded-full px-6 dark:text-secondary"
+            style={{ background: "bg-primary-gradient" }}
+            onClick={() => router.push("#solnest")}
+          >
+            Join Waitlist
+          </Button>
+        </Row>
       </div>
     </nav>
   );

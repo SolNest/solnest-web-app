@@ -14,13 +14,12 @@ export default function Layout({
     <ThemeProvider
       attribute="class"
       defaultTheme="dark"
-      // enableSystem
+      enableSystem
       disableTransitionOnChange
     >
       <Column className="w-full min-h-dvh style-scrollbar">
         <main className="min-h-screen h-full w-full mx-auto dark:text-secondary">
           <Navbar />
-          {/* <ThemeToggle /> */}
           {children}
           <Footer />
         </main>
