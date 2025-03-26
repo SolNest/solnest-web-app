@@ -47,7 +47,7 @@ const faqItems = [
   {
     question: "Is there a minimum deposit amount?",
     answer:
-      "The minimum deposit amount is $10 or equivalent in supported stablecoins.",
+      "You can start saving with any amount, but for optimal returns and rewards, we recommend a minimum deposit of $10.",
   },
   {
     question: "Are there any hidden fees?",

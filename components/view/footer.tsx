@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { PoweredSolanaSVGComponent, TransparentSolNest, X } from "../icons";
 import { Picture } from "../common/picture";
+import { MAILTO, X_LINK } from "@/constants/constants";
 
 const Footer = () => {
   return (
@@ -56,7 +57,7 @@ const Footer = () => {
             <li>
               <Link
                 href="#faq"
-                className="text-sm text-muted hover:text-secondary transition-colors"
+                className="text-sm text-muted hover:text-secondary transition-colors "
               >
                 FAQ
               </Link>
@@ -75,8 +76,9 @@ const Footer = () => {
         <div>
           <h3 className="font-medium mb-4">Socials</h3>
           <Link
-            href="https://twitter.com"
+            href={X_LINK}
             className="flex items-center gap-2 text-sm text-muted hover:text-secondary transition-colors"
+            target="_blank"
           >
             <span>Follow us on</span>
             <X />
@@ -93,7 +95,8 @@ const Footer = () => {
             sponsor, your support can drive financial innovation.
           </p>
           <Link
-            href="#"
+            target="_blank"
+            href={`mailto:${MAILTO}`}
             className="inline-block px-4 py-2 [background:linear-gradient(180deg,rgba(93,63,211,1)_0%,rgba(10,31,68,1)_76%)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity text-secondary"
           >
             Get in Touch With Us
