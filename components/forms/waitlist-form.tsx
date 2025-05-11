@@ -5,6 +5,7 @@ import type React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "../ui/input";
+import { toast } from "sonner";
 
 export function WaitlistForm() {
   const [email, setEmail] = useState("");
@@ -26,6 +27,7 @@ export function WaitlistForm() {
     //     setIsSubmitted(false);
     //   }, 3000);
     // }, 1500);
+    toast.success("Email submitted successfully!");
     console.log("Email submitted:", email);
   };
 
