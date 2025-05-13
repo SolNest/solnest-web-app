@@ -68,7 +68,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "../ui/input";
-import { toast } from "sonner";
 
 export function WaitlistForm() {
   const [email, setEmail] = useState("");
@@ -99,6 +98,7 @@ export function WaitlistForm() {
       }
     } catch (err) {
       alert("Error submitting form.");
+      console.error(err);
     } finally {
       setIsLoading(false);
     }
