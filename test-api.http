@@ -1,0 +1,6 @@
+POST http://localhost:3000/api/join-waitlist
+Content-Type: application/json
+
+{
+  "email": "joy@example.com"
+}

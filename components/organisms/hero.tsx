@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="#hero"
-      className="pt-6 pb-24 max-h-screen relative overflow-hidden px-2"
+      className="pt-6 pb-24 h-screen relative overflow-hidden px-2"
     >
       <div className="w-full h-[90px] absolute bottom-0 left-0 rounded-full bg-gradient-to-r from-[rgba(93,63,211,1)] to-[rgba(0,255,163,1)] blur-[120px]"></div>
       <div className="text-center mt-24 max-w-2xl mx-auto">
