@@ -58,16 +58,14 @@
 //   );
 // }
 
-
-
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> JOYS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "../ui/input";
+import { toast } from "sonner";
 
 export function WaitlistForm() {
   const [email, setEmail] = useState("");
@@ -104,6 +102,14 @@ export function WaitlistForm() {
     }
   };
 
+  useEffect(() => {
+    if (success) {
+      toast("Success!", {
+        description: "Congratulations, email has been added to waitlist.🎊",
+      });
+    }
+  });
+
   return (
     <form onSubmit={handleSubmit} className="flex gap-2">
       <div className="relative flex-grow">
@@ -130,7 +136,7 @@ export function WaitlistForm() {
           required
         />
       </div>
-      {success && <p className="text-green-400 ml-4">📩 Email sent!</p>}
+      {/* {success && <p className="text-green-400 ml-4">📩 Email sent!</p>} */}
     </form>
   );
 }
