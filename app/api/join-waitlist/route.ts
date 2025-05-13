@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: 'Marvellous From SolNest <waitlist@solnest.xyz>',
       to: email,
-      subject: '🎉 You’re on the waitlist!, this is a testing from joys',
+      subject: '🎉 You’re on the waitlist!',
       html: emailHtml, // ✅ Now it's a string, not a Promise
     });
   
